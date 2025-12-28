@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Trang Web của TanDung</title>
+    </head>
+    <body>
+        <form>
+            <label for="name">Họ và tên: </label>
+            <input type="text" name="name" id="name" required> <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required> <br>
+            <label for="date">Ngày sinh: </label>
+            <input type="date" name="date" id="date"> <br>
+            <label for="gender">Giới tính: </label>
+            <input type="radio" name="gender" id="gender" required>
+            Nam
+            <input type="radio" name="gender" id="gender" required>
+            Nữ
+            <br>
+            <label for="phone">Số điện thoại: </label>
+            <input type="tel" name="phone" id="phone" 
+            pattern="[0-9]{4} [0-9]{3} [0-9]{3}" placeholder="09xx xxx xxx"
+            required
+            > <br>
+            <label for="specialized">Chuyên ngành: </label>
+            <input type="text" name="specialized" id="specialized" required> <br>
+            <label for="yearofadmission">Năm nhập học: </label>
+            <input type="number" name="yearofadmission" id="yearofadmission"
+            min="1948" max="2025"
+            required
+            > <br>
+            <label for="gpa">Điểm GPA: </label>
+            <input type="number" name="gpa" id="gpa"
+            min="0" max="4"
+            required
+            > <br>
+            <label for="address">Địa chỉ: </label>
+            <textarea name="address" id="address" required></textarea><br>
+            Lớp học: 
+            <select name="">
+                <option value="">Lớp 1</option>
+                <option value="">Lớp 2</option>
+                <option value="">Lớp 3</option>
+                <option value="">Lớp 4</option>
+                <option value="">Lớp 5</option>
+                <option value="">Lớp 6</option>
+            </select><br>
+            <label for="dateofadmission">Ngày đăng ký học: </label>
+            <input type="datetime-local" name="dateofadmission" id="dateofadmission" required><br>
+            
+            <button type="submit">Gửi thông tin</button>
+        </form>
+    </body>
+</html>

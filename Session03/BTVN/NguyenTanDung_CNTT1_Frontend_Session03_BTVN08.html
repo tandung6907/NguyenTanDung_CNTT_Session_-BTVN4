@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+</head>
+
+<body>
+    <label for="name">Họ và tên: </label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="birth">Ngày sinh: </label>
+    <input type="date" id="birth" name="birth" required><br>
+    <label for="gender">Giới tính: </label>
+    <input type="radio" id="male" name="gender" value="male">
+    Nam
+    <input type="radio" id="female" name="gender" value="female">
+    Nữ <br>
+    <label for="phone">Số điện thoại: </label>
+    <input type="tel" id="phone" name="phone" required><br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="name2">Tên công ty: </label>
+    <input type="text" id="name2" name="name2" required><br>
+    <label for="role">Vai trò trong công ty: </label>
+    <select name="role" id="role">
+        <option value="role">Giám đốc điều hành (CEO)</option>
+        <option value="role">Giám đốc tài chính (CFO)</option>
+        <option value="role">Giám đốc nhân sự (CHRO)</option>
+        <option value="role">Giám đốc kỹ thuật (CTO)</option>
+    </select><br>
+    <label for="scale">Quy mô công ty: </label>
+    <select name="scale" id="scale">
+        <option value="scale">Doanh nghiệp nhỏ</option>
+        <option value="scale">Doanh nghiệp vừa</option>
+        <option value="scale">Doanh nghiệp lớn</option>
+        <option value="scale">Doanh nghiệp rất lớn</option>
+    </select><br>
+    <label for="profession">Ngành nghề trong công ty: </label>
+    <input type="text" id="profession" name="profession" required><br>
+    <label for="reason">Lý do tham gia câu lạc bộ: </label>
+    <textarea id="reason" name="reason" required></textarea><br>
+    <label for="exp">Kinh nghiệm lãnh đạo: </label>
+    <textarea id="exp" name="exp" required></textarea><br>
+    <label for="aim">Mục tiêu khi tham gia câu lạc bộ: </label>
+    <textarea id="aim" name="aim" required></textarea><br>
+    <label for="festival">Chương trình sự kiện mong muốn tham gia: </label>
+    <input type="checkbox" id="festival1" name="festival" value="festival1">
+    Networking
+    <input type="checkbox" id="festival2" name="festival" value="festival2">
+    Workshops
+    <input type="checkbox" id="festival3" name="festival" value="festival3">
+    Hội thảo<br>
+    <label for="regist">Đăng ký nhận bản tin: </label>
+    <input type="checkbox" id="regist" name="regist" value="regist">
+    có<br>
+    <button type="submit">Đăng ký hội viên</button>
+</body>
+
+</html>

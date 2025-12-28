@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+</head>
+
+<body>
+    <header>
+        <h1>Đăng ký sinh viên mới</h1>
+    </header>
+    <main></main>
+    <form action="#" method="post">
+        <label for="name">Họ và tên: </label>
+        <input type="text" id="name" name="name" value="Nguyễn Văn An"><br>
+        <label for="birth">Ngày sinh đầy đủ: </label>
+        <input type="date" id="birth" name="birth" value="2005-03-15"><br>
+        <label for="date">Tháng và năm nhập học: </label>
+        <input type="month" id="date" name="date" value="2023-09"><br>
+        <label for="time">Thời gian học: </label>
+        <input type="time" id="time" name="time" value="08:00"><br>
+        <label for="gender">Giới tính: </label>
+        <label><input type="radio" id="male" name="gender" value="male">Nam</label>
+        
+        <label><input type="radio" id="female" name="gender" value="female">Nữ</label>
+        
+        <input type="radio" id="other" name="gender" value="other">
+        Khác<br>
+        <label for="email">Email sinh viên: </label>
+        <input type="email" id="email" name="email" value="sinhvien@university.edu.vn"><br>
+        <label for="password">Mật khẩu: </label>
+        <input type="password" id="password" name="password" value="06092007"><br>
+        <label for="aim">Mục tiêu học tập: </label>
+        <textarea id="aim" name="aim">Muốn trở thành lập trình viên giỏi và đóng góp cho xã hội.</textarea><br>
+        <label for="facility">Cơ sở: </label>
+        <select id="facility" name="facility">
+            <option value="ha_noi">Hà Nội</option>
+            <option value="ho_chi_minh">Hồ Chí Minh</option>
+        </select><br>
+        <label for="pic">Ảnh thẻ sinh viên: </label>
+        <input type="file" name="pic" id="pic"><br>
+        <label for="favouritesubject">Môn học yêu thích: </label>
+        <input type="checkbox" id="math" name="favouritesubject" value="math" checked>
+        Toán
+        <input type="checkbox" id="physics" name="favouritesubject" value="programming" checked>
+        Lập trình
+        <input type="checkbox" id="chemistry" name="favouritesubject" value="english">
+        Tiếng Anh
+        <input type="checkbox" id="biology" name="favouritesubject" value="physics">
+        Vật lý<br>
+        <label for="study">Tiến độ học tập: </label>
+        <input type="range" id="study" name="study" min="0" max="100" value="69"><br>
+        <label for="schoolyear">Năm học thứ: </label>
+        <input type="number" id="schoolyear" name="schoolyear" min="1" max="5" value="2"><br>
+        <label for="search">Tìm kiếm khóa học: </label>
+        <input type="search" id="search" name="search" value="Khoa học máy tính"><br>
+        <label for="favouritcolor">Màu sắc yêu thích: </label>
+        <input type="color" id="favouritcolor" name="favouritcolor" value="#000000"><br>
+        <button type="button">Hủy</button>
+        <button type="reset">Làm mới</button>
+        <button type="submit">Gửi</button>
+    </form>
+    </main>
+</body>
+
+</html>

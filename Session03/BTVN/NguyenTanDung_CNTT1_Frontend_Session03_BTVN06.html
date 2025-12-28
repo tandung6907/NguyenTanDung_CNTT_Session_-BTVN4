@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">                        
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Trang Web của TanDung</title>
+    </head>
+    <body>
+        <form>
+            <label for="name">Họ và tên: </label>
+            <input type="text" name="name" id="name" required><br>
+            <label for="birth">Ngày sinh: </label>
+            <input type="date" name="birth" id="birth" required><br>
+            <label for="gender">Giới tính: </label>
+            Nam
+            <input type="radio" name="gender" required>
+            Nữ
+            <input type="radio" name="gender" required><br>
+            <label for="cccd">Căng cước công dân: </label>
+            <input type="number" name="cccd" id="cccd" required><br>
+            <label for="passportissuancedate">Ngày cấp: </label>
+            <input type="date" name="passportissuancedate" id="passportissuancedate" required><br>
+            <label for="where">Nơi cấp: </label>
+            <input type="text" name="where" id="where" required><br>
+            <label for="phone">Số điện thoại: </label>
+            <input type="tel" name="phone" id="phone" required><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="address">Địa chỉ thưởng trú: </label>
+            <textarea name="address" id="address" required></textarea><br>
+            <label for="address2">Địa chỉ tạm trú: </label>
+            <textarea name="address2" id="address2" required></textarea><br>
+            <label for="cccd2">Loại căng cước công dân: </label>
+            Căng cước công dân mới
+            <input type="radio" name="cccd2" required>
+            Căng cước công dân cũ
+            <input type="radio" name="cccd2" required><br>
+            <label for="nation">Dân tộc: </label>
+            <input type="text" name="nation" id="nation" required><br>
+            <label for="religion">Tôn giáo: </label>
+            <input type="text" name="religion" id="religion" required><br>
+            <label for="national">Quốc tịch: </label>
+            <input type="text" name="national" id="national" value="Việt Nam" readonly><br>
+            <label for="nameofparents">Họ tên cha/mẹ: </label>
+            <input type="text" name="nameofparents" id="nameofparents" required><br>
+            <label for="cccdofparents">Số CMND/CCCD của cha/mẹ: </label>
+            <input type="number" name="cccdofparents" id="cccdofparents" required><br>
+            Tỉnh/Thành phố: 
+            <select name="">
+                <option value="">Chọn Tỉnh/Thành phố</option>
+                <option value="">Tp1</option>
+                <option value="">Tp2</option>
+                <option value="">Tp3</option>
+                <option value="">Tp4</option>
+                <option value="">Tp5</option>
+                <option value="">Tp6</option>
+            </select><br>
+            <button type="submit">Gửi thông tin</button>
+        </form>
+    </body>
+</html>
