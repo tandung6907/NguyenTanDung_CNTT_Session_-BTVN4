@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+</head>
+<body>
+    <!-- các thẻ (element) dùng để tạo form 
+        1.form
+        2.input: thêm ô nhập dữ liệu
+            + các thuộc tính trong input:
+                + placeholder: gợi ý thông tin cần nhập
+                + type: định kiểu dữ liệu - mặc định là text
+                    + password: text sẽ bị che đi
+                    + number: chỉ nhập số
+                    + radio: cho ô tròn tích duy nhất 1 lựa chọn 
+                    + checkbox: cho ô vuông có thể tích nhiều lựa chọn
+                    + date: chọn ngày tháng năm
+                    + time: chọn giờ phút
+                    + month: chọn tháng và năm
+                    + email: định dạng email
+                    + value: giá trị mặc định khi load trang
+        3.label||span - mô tả tiêu đề của ô nhập liệu
+            + label: - for thuộc tính riêng của label
+        id là định danh của ô input
+         Các thuộc tính (ATTRIBUTE||PROVERTY) trong form
+        1.action: Xác định nơi, địa chỉ gửi dữ liệu
+        2.method: phương thức gửi dữ liệu
+            +GET: khi gửi dữ liệu thông tin sẽ đính kèm trên URL
+            +POST: thông tin khi gửi dữ liệu nó nằm ở trong form data-->
+            <form action="">
+                <span>username</span>
+                <input type="text" name="" id="" placeholder="Nguyễn Tấn Dũng"> <br><br>
+                <label for="pass">password</label>
+                <input type="password" name="" id="pass"><br><br>
+                <input type="number" name="" id=""><br><br>
+                <label for="male">Nam</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Nữ</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="other">Khác</label>
+                <input type="radio" name="gender" id="other" value="other"><br><br>
+                <label for="hobby1">Bóng đá</label>
+                <input type="checkbox" name="hobby" id="hobby1" value="football">
+                <label for="hobby2">Bóng rổ</label>
+                <input type="checkbox" name="hobby" id="hobby2" value="basketball">
+                <label for="hobby3">Bơi lội</label>
+                <input type="checkbox" name="hobby" id="hobby3" value="swimming"><br><br>
+                <label for="">Tiến trình</label>
+                <input type="range" name="" id="" min="0" max="100" value="50"><br><br>
+                <label for="birth">Ngày sinh: </label>
+                <input type="date" id="birth" name="birth" value="2007-09-06"><br><br>
+                <label for="month">Tháng và năm nhập học: </label>
+                <input type="month" id="month" name="month" value="2025-08"><br><br>
+                <label for="color">Màu yêu thích: </label>
+                <input type="color" id="color" name="color"><br><br>
+                <input type="file" name="" id=""><br><br>
+                <input type="file" name="" id="" multiple><br><br>
+                <label for="facilities">Cơ sở:</label>
+                <select name=""> 
+                    <option value="dn">Đà Nẵng</option>
+                    <option value="hn">Hà Nội</option>
+                    <option value="hcm">Hồ Chí Minh</option>
+                </select> <br><br>
+                <textarea name="" id="">
+                    <!-- Nhập nhiều dữ liệu dạng text -->
+                </textarea>
+            </form>
+</body>
+</html>
