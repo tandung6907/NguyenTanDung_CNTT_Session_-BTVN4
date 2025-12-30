@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            background-attachment: fixed;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        header h3 {
+            font-size: 1.3em;
+            color: #fffacd;
+            font-style: italic;
+        }
+
+        header hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #ffd700, transparent);
+            margin: 20px 0;
+        }
+
+        main {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin: 30px 0 20px 0;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            margin: 15px 0;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            border: 2px solid #4a5568;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+        }
+
+        tr:nth-child(odd) {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+        }
+
+        tr:hover {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            transform: scale(1.01);
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        mark {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        abbr {
+            color: #667eea;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: help;
+        }
+
+        ul {
+            margin: 10px 0 10px 30px;
+        }
+
+        ul li {
+            margin: 8px 0;
+            color: #4a5568;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+            font-size: 1.05em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #667eea;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            border-color: #ffd700;
+        }
+
+        form {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        form table {
+            background: transparent;
+            box-shadow: none;
+        }
+
+        label {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            transform: scale(1.02);
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button[type="submit"] {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button[type="reset"] {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        button[type="reset"]:hover {
+            background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(245, 87, 108, 0.4);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            color: white;
+            font-size: 1em;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #667eea, transparent);
+            margin: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CHĂM SÓC SINH VIÊN VIỆT NAM</h1>
+        <h3><i>Chắp cánh ước mơ - Vững bước tương lai</i></h3>
+        <hr>
+    </header>
+    <main>
+        <h2>DANH SÁCH CÁC KHÓA HỌC NỔI BẬT DÀNH CHO SINH VIÊN</h2>
+        <p><b>Chào mừng các bạn sinh viên đến với chương trình đào tạo của chúng tôi.
+                Các khóa học của chúng tôi được thiết kế để giúp bạn phát triển toàn diện các kỹ năng cần thiết cho công
+                việc và cuộc sống.
+                Dưới đây là những khóa học nổi bật mà chúng tôi cung cấp:</b></p>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <th>Tên Khóa Học</th>
+                <th>Chuyên Ngành</th>
+                <th>Thời Gian</th>
+                <th>Học Phí (VND)</th>
+                <th>Mô Tả</th>
+                <th>Yêu Cầu</th>
+                <th>Phương Pháp Học</th>
+            </tr>
+            <tr>
+                <td><b>Khóa Học Lập Trình Web</b></td>
+                <td>Công Nghệ Thông Tin</td>
+                <td>3 tháng</td>
+                <td>3.500.000</td>
+                <td rowspan="2"><b>Mô tả:</b> Khóa học này cung cấp cho bạn các kỹ năng cơ bản và nâng cao về lập trình
+                    web, từ việc xây dựng trang web tĩnh đến các ứng dụng động sử dụng JavaScript, HTML và CSS.
+                    Bạn sẽ được học cách phát triển <mark>website</mark> từ đầu, bao gồm các kiến thức về <abbr
+                        title="CSS">CSS</abbr>, <abbr title="HTML">HTML</abbr>, và JavaScript.
+                    <ul>
+                        <li><b>HTML</b> cơ bản</li>
+                        <li><b>CSS</b> để tạo giao diện đẹp mắt</li>
+                        <li><b>JavaScript</b> cho trang web động</li>
+                        <li><b>Responsive Design</b> để tối ưu trên mọi thiết bị</li>
+                    </ul>
+                    <b>Phương pháp học:</b> Lý thuyết kết hợp thực hành, dựa trên các dự án thực tế có sự hướng dẫn trực
+                    tiếp từ giảng viên.
+                </td>
+                <td rowspan="2">Cần có kiến thức cơ bản về máy tính, khả năng tự học và tinh thần ham học hỏi.</td>
+                <td rowspan="2">Lý thuyết kết hợp thực hành dựa trên các dự án thực tế, có sự hướng dẫn trực tiếp từ
+                    giảng viên.</td>
+            </tr>
+            <tr>
+                <td><b>Khóa Học Lập Trình Python</b></td>
+                <td>Phát Triển Phần Mềm</td>
+                <td>4 tháng</td>
+                <td>4.000.000</td>
+            </tr>
+            <tr>
+                <td><b>Khóa Học Kỹ Năng Giao Tiếp</b></td>
+                <td>Phát Triển Bản Thân</td>
+                <td>2 tháng</td>
+                <td>2.000.000</td>
+                <td rowspan="2"><b>Mô tả:</b> Khóa học tập trung vào việc phát triển kỹ năng giao tiếp và thuyết trình,
+                    giúp sinh viên tự tin hơn trong môi trường học tập và làm việc. Bạn sẽ học cách làm thế nào để
+                    truyền đạt ý tưởng một cách rõ ràng và thuyết phục.
+                    <ul>
+                        <li><b><u>Giao tiếp hiệu quả</u></b></li>
+                        <li><b>Thuyết trình trước đám đông</b></li>
+                        <li><b>Đàm phán và thuyết phục</b></li>
+                    </ul>
+                    <b>Phương pháp học:</b> Học qua các tình huống giao tiếp thực tế, đóng vai trò và thảo luận nhóm,
+                    kết hợp lý thuyết và thực hành.
+                </td>
+                <td rowspan="2">Cần sự cởi mở và sẵn sàng tham gia vào các tình huống giao tiếp nhóm.</td>
+                <td rowspan="2">Lý thuyết kết hợp thực hành, học qua các tình huống giao tiếp thực tế, đóng vai trò và
+                    thảo luận nhóm.</td>
+            </tr>
+            <tr>
+                <td><b>Khóa Học Lãnh Đạo Sinh Viên</b></td>
+                <td>Phát Triển Bản Thân</td>
+                <td>2 tháng</td>
+                <td>2.500.000</td>
+            </tr>
+            <tr>
+                <td><b>Khóa Học Quản Lý Thời Gian</b></td>
+                <td>Quản Lý</td>
+                <td>1 tháng</td>
+                <td>1.500.000</td>
+                <td rowspan="2"><b>Mô tả:</b> Khóa học này giúp sinh viên phát triển kỹ năng quản lý thời gian, từ việc
+                    lập kế hoạch đến việc đạt được mục tiêu cá nhân.
+                    <ul>
+                        <li><b>Quản lý công việc</b> và sắp xếp ưu tiên</li>
+                        <li><b>Tạo lịch trình</b> hiệu quả</li>
+                        <li><b>Giảm thiểu trì hoãn</b> và tăng năng suất</li>
+                    </ul>
+                    <b>Phương pháp học:</b> Học qua các bài tập thực tế, hướng dẫn về cách sử dụng công cụ quản lý thời
+                    gian.
+                </td>
+                <td rowspan="2">Cần có sự chủ động trong việc thay đổi thói quen và tối ưu hóa quy trình làm việc cá
+                    nhân.</td>
+                <td rowspan="2">Học qua các bài tập thực tế, hướng dẫn cụ thể về cách quản lý thời gian bằng công cụ như
+                    lịch trình và các ứng dụng hỗ trợ.</td>
+            </tr>
+            <tr>
+                <td><b>Khóa Học Marketing Online</b></td>
+                <td>Marketing</td>
+                <td>4 tháng</td>
+                <td>5.000.000</td>
+            </tr>
+        </table>
+        <h2>LIÊN KẾT HỮU ÍCH</h2>
+        <p>Tham khảo các bài viết hữu ích và thông tin liên quan đến khóa học:</p>
+        <ul>
+            <li><a href="https://rikkei.edu.vn/" target="_blank">Tìm kiếm thông tin về các khóa học</a></li>
+            <li><a href="https://www.wikipedia.org/" target="_blank">Wikipedia - Nguồn tài liệu học tập mở</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">Học lập trình trên YouTube</a></li>
+        </ul>
+        <h2>HÌNH ẢNH VỀ CÁC KHÓA HỌC</h2>
+        <img src="../PicSs4/Screenshot 2025-12-30 085029.png" alt="HTML CSS">
+        <p><b><i><u>Khóa học lập trình web: </u></i></b>Khóa học giúp bạn phát triển website từ cơ bản đến nâng cao.</p>
+        <img src="../PicSs4/python.png" alt="logopython">
+        <p><b><i><u>Khóa học lập trình Python: </u></i></b>Là khóa học giúp bạn xây dựng các ứng dụng phần mềm với ngôn
+            ngữ Python.</p>
+        <h2>ĐĂNG KÝ KHÓA HỌC NGAY HÔM NAY</h2>
+        <form action="">
+            <table cellpadding="9">
+                <tr>
+                    <td><label for="name"><b>Họ và tên: </b></label></td>
+                    <td><input type="text" name="name" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email"><b>Email: </b></label></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone"><b>Số điện thoại: </b></label></td>
+                    <td><input type="tel" name="phone" id="phone" pattern="[0-9]{4} [0-9]{3} [0-9]{3}"
+                            placeholder="09xx xxx x95" required></td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>Chọn khóa học: </b></label></td>
+                    <td><select name="" required>
+                            <option value="">Khóa học lập trình - 3.500.000</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="people"><b>Số người: </b></label></td>
+                    <td><input type="number" name="people" id="people" min="1" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Ngày bắt đầu: </label></td>
+                    <td><input type="date" name="date" id="date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="require">Yêu cầu thêm: </label></td>
+                    <td><textarea name="require" id="require"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">GỬI ĐĂNG KÝ KHÓA HỌC</button> <button type="reset">Nhập lại</button></td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+    </main>
+    <footer>
+        <p><b>Liên hệ:</b> Email: info@sinhvienviet.vn |Hotline: 1900 5678 Địa chỉ: 456 Đường XYZ, Quận 3, TP.HCM</p>
+    </footer>
+</body>
+
+</html>
