@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .doctor-box img {
+            width: 220px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .doctor-box:has(img:hover) {
+            filter: brightness(1.05); /*dùng để chỉnh màu sáng hoặc tối hơn khi rê chuột vào ảnh*/
+            background-color: #e6f7ff;
+        }
+
+        h1 {
+            color: #1e90ff;
+        }
+
+        .doctor-name {
+            color: #1e90ff;
+            font-weight: bold;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        .service-title {
+            color: #1e90ff;
+            font-size: 28px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Đội Ngũ Bác Sĩ</h1>
+    </header>
+
+    <main>
+        <div class="doctor-box">
+            <img src="../PicSs5/doctor.jpg" alt="Bác sĩ A">
+
+            <div class="doctor-name">Bác sĩ A</div>
+            <div>Chuyên khoa Nha khoa tổng quát</div>
+        </div>
+
+        <h2 class="service-title">Dịch Vụ Nha Khoa</h2>
+
+        <p>Khám và tư vấn răng miệng tổng quát</p>
+        <p>Tẩy trắng răng</p>
+        <p>Niềng răng thẩm mỹ</p>
+    </main>
+</body>
+
+</html>
