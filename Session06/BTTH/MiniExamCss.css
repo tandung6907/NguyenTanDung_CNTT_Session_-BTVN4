@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    margin: 0px;
+}
+
+header {
+    background-color: aquamarine;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+header h1 {
+    color: rgb(45, 112, 94);
+    font-size: 45px;
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(190, 219, 245);
+    margin: 0px 10px;
+    font-size: 25px;
+}
+
+nav a:hover {
+    background-color: rgb(6, 94, 171);
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(19, 119, 219);
+    font-weight: bold;
+}
+
+.image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image img {
+    width: 80%;
+}
+
+.content {
+    margin: 20px auto;
+    background-color: white;
+    text-align: justify;
+    margin: 0px 10px;
+    font-size: 30px;
+}
+
+.content h2 {
+    color: rgb(45, 112, 94);
+}
+
+.content li {
+    margin-left: 40px;
+}
+
+.content li:hover {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: rgb(45, 112, 94);
+    color: white;
+    text-align: center;
+    margin: 0px 10px;
+    font-size: 20px;
+}
