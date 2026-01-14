@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.intro {
+    background: linear-gradient(#0E2647, #165FBF);
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 50px 0px 50px 200px;
+    line-height: 1.5;
+}
+
+.subtitle {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    border: 0.2px solid #979ab1;
+}
+
+.intro h1 {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.intro p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    border: none;
+    border-radius: 30px;
+    background-color: #1A73E8;
+    margin: 15px 0px;
+    display: inline;
+    font-size: 18px;
+    padding: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.buttons:hover {
+    background-color: #52627A;
+    transform: translateY(-5px);
+}
+
+.stats {
+    margin-top: 15px;
+    display: inline-block;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: rgba(70, 90, 116, 0.12);
+    padding: 18px 70px 18px 20px;
+    border-radius: 20px;
+    border: 0.5px solid #979ab1;
+    transition: all 0.1s linear;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.stat-box .number {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.stat-box .small {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.content {
+    background-color: #FFFFFF;
+    font-size: 18px;
+    padding: 50px 0px 50px 200px;
+    line-height: 1.5;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.content p {
+    color: #465A74;
+}
+
+.content li {
+    color: #2D3E58;
+    margin-left: 20px;
+}
+
+.button {
+    border: none;
+    color: #1A73E8;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container {
+    border: 1px solid #E6EEF8;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 20px 600px 20px 10px;
+    margin-top: 30px;
+    box-shadow: 0px 5px 10px 5px #d3dce7;
+    transition: all 0.2s linear;
+    position: relative;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    position: absolute;
+    bottom: 155px;
+    left: 965px;
+    transform: rotate(5deg);
+    border: 1px solid #1A73E8;
+    background-color: #c5d9f3;
+    color: #1A73E8;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.footer {
+    margin-bottom: 10px;
+    margin-left: 200px;
+}

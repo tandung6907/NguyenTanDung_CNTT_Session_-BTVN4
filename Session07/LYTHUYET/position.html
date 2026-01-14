@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+        }
+        .div1 {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        .div2 {
+            border: 1px solid orangered;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            bottom: 100px;
+            left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    position: định vị vị trí của các phần tử
+    - gồm 5 giá trị:
+    + static: đây là trạng thái mặc định 
+    + relative: vị trí tương đối: lấy vị trí ban đầu của nó làm mốc
+    + absolute: 
+    + fixed: cố định thanh header
+    + sticky: thường tạo thanh navbar
+    -->
+    <div class="div1 box">div 1</div>
+    <div class="div2 box">div 2</div>
+</body>
+</html>

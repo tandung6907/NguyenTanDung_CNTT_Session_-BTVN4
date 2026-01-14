@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            width: 500px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .status-tag {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-color: #ffecd1;
+            color: #d4a017;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin: 0 0 25px 0;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .label {
+            color: #666;
+            margin-right: 5px;
+        }
+
+        .value {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .progress-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 25px 0 15px 0;
+            color: #222;
+        }
+
+        .progress-container {
+            background-color: #eeeeee;
+            border-radius: 10px;
+            height: 12px;
+            width: 100%;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            background-color: #26e632;
+            height: 100%;
+            width: 65%;
+            border-radius: 10px;
+        }
+
+        .date-info {
+            color: #888;
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .date-info span {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="status-tag">Đang điều trị</div>
+
+        <h1>Niềng răng chỉnh nha</h1>
+
+        <div class="info-row">
+            <span class="label">Bác sĩ 👤 :</span>
+            <span class="value">BS. Nguyễn Minh Tâm</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Chi phí 🖩 :</span>
+            <span class="value">25.000.000 đ</span>
+        </div>
+
+        <div class="progress-title">Tiến trình điều trị</div>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="date-info">
+            Bắt đầu: <span>10/03/2025</span>
+        </div>
+
+        <div class="date-info">
+            Dự kiến hoàn thành: <span>10/03/2026</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

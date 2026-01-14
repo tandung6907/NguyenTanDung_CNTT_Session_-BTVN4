@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+    <style>
+        /*Trước khi viết Css thì reset Css để đưa về trạng thái mặc định*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .div1 {
+            background-color: orangered;
+            /* padding: 15px; */
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+        }
+
+        .div2 {
+            margin: 10px /* đơn vị tuyệt đối: 1px = 2,54/300 cm, ngoài px còn vh, em, rem, %*/;
+            background-color: chartreuse;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Box-model: Mô hình hộp
+        + margin: là khoảng cách từ border đến phần tử khác
+        + border: độ dày của viền
+        + padding: khoảng cách tử viền đến nội dung
+        + content: nội dung
+    -->
+        <div class="div1"><p>cntt1</p></div>
+        <div class="div2"><p>cntt1</p></div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .package-card {
+            width: 380px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hot-badge {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: red;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .card-header {
+            background: #39f5e8;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 20px 25px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 17px;
+        }
+
+        .row:last-child {
+            border-bottom: none;
+        }
+
+        .highlight {
+            color: #00cc44;
+            font-weight: bold;
+        }
+
+        .card-footer {
+            padding: 20px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px 0;
+            background: #00d7ff;
+            border: none;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #00c3e8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="package-card">
+        <div class="hot-badge">HOT</div>
+
+        <div class="card-header">
+            GÓI CHĂM SÓC RĂNG
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                <span>Dịch vụ:</span>
+                <span class="highlight">Tẩy trắng răng</span>
+            </div>
+
+            <div class="row">
+                <span>Công nghệ:</span>
+                <span>Laser Whitening</span>
+            </div>
+
+            <div class="row">
+                <span>Thời gian:</span>
+                <span class="highlight">60 phút</span>
+            </div>
+
+            <div class="row">
+                <span>Bảo hành:</span>
+                <span class="highlight">6 tháng</span>
+            </div>
+
+            <div class="row">
+                <span>Giá ưu đãi:</span>
+                <span class="highlight">1.600.000 đ</span>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <button class="btn">ĐẶT LỊCH NGAY</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
