@@ -7,6 +7,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F1F5F9;
+    position: relative;
 }
 
 header {
@@ -54,17 +55,18 @@ nav a:hover {
     margin: 10px 10px 30px 10px;
 }
 
-.content {
+.commitment {
     border-radius: 20px;
     background-color: #ECFEFF;
     margin: 10px 10px 30px 15px;
     padding: 20px 30px;
 }
 
-footer {
+.footer {
+    background-color: #0f172a;
+    color: #e5e7eb;
     text-align: center;
-    background-color: #0F172A;
-    color: #FFFFFF;
-    padding: 30px;
-    border-radius: 20px;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
