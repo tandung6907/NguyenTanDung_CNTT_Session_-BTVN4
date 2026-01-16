@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #FFF8E1;
+
+
+}
+
+.main {
+    width: 960px;
+    max-width: 92%;
+    margin: 22px auto 30px;
+}
+
+.topbar {
+    background: #FFF8E1;
+    padding: 8px 10px;
+    text-align: center;
+    border-bottom: 4px solid #FBC02D;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.span1:before {
+    content: "🌸";
+}
+
+.span2:before {
+    content: "🧧";
+}
+
+.span3:before {
+    content: "🍃";
+}
+
+.header {
+    position: relative;
+    background: #FFF8E1;
+    text-align: center;
+    padding: 48px 16px 42px;
+    border-bottom: 6px solid #FBC02D;
+}
+
+.header-inner {
+    width: 920px;
+    max-width: 92%;
+    margin: 0 auto;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 44px;
+    letter-spacing: 0.5px;
+}
+
+.header h1::after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 4px;
+    background: #FBC02D;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+.slogan {
+    margin: 10px 0 18px;
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.decor {
+    position: absolute;
+    font-size: 30px;
+    user-select: none;
+}
+
+.decor-1 {
+    top: 14px;
+    right: 18px;
+    transform: rotate(8deg);
+}
+
+.decor-2 {
+    top: 18px;
+    left: 16px;
+    transform: rotate(-10deg);
+}
+
+.decor-3 {
+    bottom: 12px;
+    right: 60px;
+    transform: rotate(-6deg);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    background: tomato;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    transition: 0.25s;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #FFF3C4;
+    transform: translateY(-2px) scale(1.02);
+    color: tomato;
+    cursor: pointer;
+}
+
+.card {
+    background: #ffffff;
+    border: 3px solid #FBC02D;
+    border-radius: 10px;
+    padding: 22px 22px 26px;
+    margin: 18px 0;
+    box-shadow: 0 6px 0 rgba(251, 192, 45, 0.65);
+}
+
+.card h2 {
+    margin: 0 0 12px;
+    font-size: 26px;
+    color: #B71C1C;
+}
+
+.quote {
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: #FFF3C4;
+    border-left: 8px solid #2E7D32;
+    border-radius: 8px;
+    color: #3E2723;
+    position: relative;
+}
+
+.quote::before {
+    content: "🌸";
+    position: absolute;
+    left: -18px;
+    top: -14px;
+    font-size: 26px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 10px;
+}
+
+.table thead {
+    background: #D32F2F;
+    color: #FFF8E1;
+}
+
+.table th,
+.table td {
+    border: 1px solid #FBC02D;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.table tbody tr {
+    transition: 0.25s;
+}
+
+.table tbody tr:hover {
+    background: #FFF3C4;
+}
+
+.hint {
+    margin: 12px 0 0;
+    font-size: 13px;
+    color: #6D4C41;
+}
+
+.infor {
+    width: 520px;
+    max-width: 100%;
+}
+
+.infor label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #4E342E;
+}
+
+.star {
+    color: #D32F2F;
+}
+
+.infor input,
+.infor textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    transition: 0.25s;
+    background: #FFFBF0;
+}
+
+.infor input:focus,
+.infor textarea:focus {
+    border-color: #2E7D32;
+    outline: none;
+    background: #FFFFFF;
+}
+
+.radio-box {
+    margin-top: 8px;
+    padding: 10px;
+    background: #FFF3C4;
+    border: 2px dashed #D32F2F;
+    border-radius: 8px;
+}
+
+.button-submit {
+    margin-top: 14px;
+    padding: 12px 18px;
+    background: tomato;
+    color: #FFF8E1;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+
+}
+
+.button-submit:hover {
+    background: #B71C1C;
+    transform: translateY(-3px) scale(1.03);
+}
+
+.note {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #6D4C41;
+}
+
+.contact {
+    position: relative;
+    padding: 18px 18px 14px 48px;
+    background: #FFFBF0;
+    border: 2px solid #FBC02D;
+    border-radius: 10px;
+}
+
+.footer {
+    background: #4E342E;
+    color: #FFF8E1;
+    text-align: center;
+    padding: 18px 12px;
+    border-top: 6px solid #FBC02D;
+}
+
+.footer a {
+    color: #FBC02D;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #FFF3C4;
+}
