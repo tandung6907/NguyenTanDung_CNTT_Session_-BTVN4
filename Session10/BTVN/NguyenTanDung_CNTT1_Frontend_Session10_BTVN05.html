@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+    <link rel="stylesheet" href="../CSS10/BTVN05.css">
+</head>
+
+<body>
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Đặt Bàn Tại La Belle Époque</h1>
+            <p>Trải nghiệm không gian Fine Dining sang trọng và dịch vụ hoàn hảo</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80"
+                        alt="Không gian nhà hàng">
+                    <div class="gallery-overlay">
+                        <h3>Không Gian Chính</h3>
+                        <p>Sang trọng với ánh sáng ấm áp</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80"
+                        alt="Bàn Tiệc Riêng Tư">
+                    <div class="gallery-overlay">
+                        <h3>Bàn Tiệc Tinh tế</h3>
+                        <p>Bộ đồ ăn cao cấp và bố trí hoàn hảo</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80"
+                        alt="Món Ăn Nghệ Thuật">
+                    <div class="gallery-overlay">
+                        <h3>Món Ăn Nghệ Thuật</h3>
+                        <p>Plating đỉnh cao từ đầu bếp</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&q=80"
+                        alt="Món Chính Cao Cấp">
+                    <div class="gallery-overlay">
+                        <h3>Món Chính Cao Cấp</h3>
+                        <p>Nguyên liệu tươi và sáng tạo</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80"
+                        alt="Bàn Ăn Lãng Mạn">
+                    <div class="gallery-overlay">
+                        <h3>Bàn Ăn Lãng Mạn</h3>
+                        <p>Nến, hoa và không gian riêng tư</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?w=600&q=80"
+                        alt="Bảo Mổ Hàu Tươi">
+                    <div class="gallery-overlay">
+                        <h3>Bếp Mở Hiện Đại</h3>
+                        <p>Xem đầu bếp chế biến trực tiếp</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80"
+                        alt="Món Tráng Miệng">
+                    <div class="gallery-overlay">
+                        <h3>Món Tráng Miệng Tinh Tế</h3>
+                        <p>Edible flowers và plating nghệ thuật</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section class="reservation-section">
+        <div class="reservation-container">
+            <h2>Đặt Bàn Ngay Hôm Nay</h2>
+
+            <div>
+                <form id="reservationForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" id="fullname" name="fullname" required placeholder="Họ và tên">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required placeholder="Số điện thoại">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <input type="email" id="email" name="email" required placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="time" name="time" required>
+                                <option value="">Chọn giờ</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="guests" name="guests" required>
+                                <option value="">Chọn số khách</option>
+                                <option value="1">1 người</option>
+                                <option value="2">2 người</option>
+                                <option value="3">3 người</option>
+                                <option value="4">4 người</option>
+                                <option value="5">5 người</option>
+                                <option value="6">6 người</option>
+                                <option value="7">7 người</option>
+                                <option value="8">8+ người</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Gửi Yêu Cầu Đặt Bàn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&#169; 2025 La Belle Époque - Fine Dining Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* First Row - Big + Small Layout */
+.first-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Big Dish - 60% width */
+.big-dish {
+    flex: 0 0 100%;
+    min-width: 0;
+}
+
+@media (min-width: 768px) {
+    .big-dish {
+        flex: 0 0 calc(60% - 10px);
+    }
+}
+
+/* Small Dishes Container - 40% width total */
+.small-dishes-container {
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .small-dishes-container {
+        flex: 0 0 calc(40% - 10px);
+    }
+}
+
+/* Each Small Dish - 20% of row (50% of container on desktop) */
+.small-dish {
+    flex: 0 0 100%;
+}
+
+@media (min-width: 480px) {
+    .small-dish {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media (min-width: 768px) {
+    .small-dish {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .small-dish {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+/* Second Row - Two equal dishes */
+.second-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.second-row .dish-card-wrapper {
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .second-row .dish-card-wrapper {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+/* Card Styles */
+.dish-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dish-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.big-dish .dish-image {
+    height: 300px;
+}
+
+.dish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.dish-card:hover .dish-image img {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.dish-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.dish-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.dish-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e67e22;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .dish-image,
+    .big-dish .dish-image {
+        height: 200px;
+    }
+
+    .dish-name {
+        font-size: 1rem;
+    }
+
+    .dish-price {
+        font-size: 1.2rem;
+    }
+}

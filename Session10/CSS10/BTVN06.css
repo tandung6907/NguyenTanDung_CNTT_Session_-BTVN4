@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #d4af37;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.cta-button {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: #f0c14b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Featured Dishes Section */
+.featured-section {
+    padding: 80px 20px;
+    background-color: #fafafa;
+}
+
+.featured-section h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 60px;
+    color: #2c2c2c;
+    letter-spacing: 2px;
+}
+
+.dishes-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.dish-card {
+    position: relative;
+    width: calc(25% - 23px);
+    min-width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dish-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.dish-card:hover img {
+    transform: scale(1.1);
+}
+
+.dish-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    padding: 60px 20px 20px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.dish-card:hover .dish-overlay {
+    transform: translateY(0);
+}
+
+.dish-name {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.dish-price {
+    color: #d4af37;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    background-color: #1E1E1E;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #D4AF37;
+    letter-spacing: 2px;
+}
+
+.about-section p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #DDDDDD;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #111111;
+    color: #DDDDDD;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.9;
+}

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f0;
+    color: #333;
+}
+
+header {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.featured-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.featured-section h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2c2c2c;
+    font-weight: normal;
+}
+
+.featured-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-content {
+    padding: 30px;
+}
+
+.featured-content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2c2c2c;
+}
+
+.featured-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.posts-section {
+    margin-top: 60px;
+}
+
+.posts-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2c2c2c;
+    font-weight: normal;
+}
+
+.posts-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-item {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.post-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+}
+
+.post-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 13px;
+}
