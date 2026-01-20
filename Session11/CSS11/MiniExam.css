@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 1920px;
+    height: 62px;
+    background-color: #C0392B;
+}
+
+.container {
+    width: 1100px;
+    height: 32px;
+    margin: 15px 410px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.header .container h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.header .container nav a {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 100%;
+    margin-right: 20px;
+}
+
+.main {
+    background-color: #FFFFFF;
+}
+
+.about-content {
+    width: 1000px;
+    height: 369px;
+    display: flex;
+    justify-content: center;
+    margin: 60px 480px;
+}
+
+.about .about-content h2 {
+    font-weight: 700;
+    color: #333333;
+    line-height: 100%;
+}
+
+.about .about-content p {
+    font-weight: 400;
+    color: #333333;
+    line-height: 100%;
+}
+
+.about .image {
+    border-radius: 8px;
+}
+
+.list {
+    width: 1000px;
+    height: 369px;
+    display: flex;
+    justify-content: center;
+    margin: 60px 480px;
+}
+
+.list h3 {
+    color: #C0392B;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.list-img {
+    display: inline-block;
+
+}
+
+.list-img {
+    background: #EEEEEE;
+    width: 300px;
+    height: 280px;
+    border: 1px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.list-img:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.letter {
+    color: #333333;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 100%;
+}
+
+.number {
+    color: #C0392B;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 100%;
+}
+
+.footer {
+    width: 1920px;
+    height: 78px;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
