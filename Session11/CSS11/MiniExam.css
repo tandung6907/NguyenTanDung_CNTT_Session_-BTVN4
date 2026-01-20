@@ -56,9 +56,12 @@ body {
     font-weight: 700;
     color: #333333;
     line-height: 100%;
+    width: 441px;
+    height: 85px;
+    display: block;
 }
 
-.about .about-content p {
+.main .about-content p {
     font-weight: 400;
     color: #333333;
     line-height: 100%;
