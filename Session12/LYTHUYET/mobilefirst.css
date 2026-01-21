@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mobile {
+    background-color: green;
+}
+
+@media (min-width: 600px) {
+    .mobile {
+        background-color: red;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile {
+        background-color: violet;
+    }
+}

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main-wrapper {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo .logo {
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-heart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #ef4444;
+    font-size: 20px;
+}
+
+.course-card {
+    max-width: 400px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 40px auto;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.course-banner {
+    height: 200px;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+
+.tag-top {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.course-body {
+    padding: 20px;
+}
+
+.category-tag {
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.rating {
+    float: right;
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-gray);
+    font-size: 14px;
+    margin: 15px 0;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 15px;
+}
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-price {
+    color: #4f46e5;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.btn-detail {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-detail:hover {
+    background: #1d4ed8;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .price-card.featured {
+        transform: scale(1);
+    }
+}

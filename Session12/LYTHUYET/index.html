@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web của TanDung</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!--
+    RESPONSIVE: kỹ thuật thiết kế web tương thích với nhiều thiết bị tức là giao diện có thể phù hợp khi dùng với các thiết bị
+    (máy tính, máy tính bảng, điện thoại...)
+
+    1.Mobile first: thiết kế web trên màn hình điện thoại trước, sau đó thiết kế lên các màn hình lớn hơn (desktop, tablet..)
+    2.Desktop first: thiết kế web trên màn hình máy tính trước, sau đó thiết kế xuống các màn hình nhỏ hơn (mobile, tablet..)
+    3.Các điểm breakpoint: điểm giới hạn kích thước đối với các thiết bị
+        + <= 576px || 600px : kích thước màn hình điện thoại
+        + 576px || 600px < x <= 768px : kích thước màn hình máy tính bảng
+        + 768px < x <= 1200px : kích thước màn hình laptop
+        + 1200px < x : kích thước máy tính bàn
+    4.mediaquery:
+        + đối với desktop first: phải dùng max-width, thiết lập thông số từ lớn xuống bé
+        @media (max-width: 1200px) {
+            ...viết css...
+        }
+        @media (max-width: 768px) {
+            ...viết css...
+        }
+
+        + đối với mobile first: phải dùng min-width, thiết lập thông số từ bé lên lớn
+        @media (min-width: 600px) {
+            ...viết css...
+        }
+        @media (min-width: 768px) {
+            ...viết css...
+        }
+    5.các thẻ meta phục vụ cho việc responsive
+    6.khi dùng flex: 
+        + flex-wrap: tự động xuống dòng không đủ điều kiện
+        + grid: 
+
+        thư viện: TAIWIND, MERTERIAL, ANT
+    -->
+    <!-- DESKTOP FIRST -->
+     <div class="container">RESPONSIVE</div>
+     <p>học CSS</p>
+</body>
+</html>
