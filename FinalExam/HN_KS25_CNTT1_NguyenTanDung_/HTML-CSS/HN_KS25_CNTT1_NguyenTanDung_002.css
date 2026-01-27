@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+}
+
+.header {
+    max-width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header .navbar a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    margin-right: 20px;
+    color: #000000;
+    transition: all 0.3s;
+}
+
+.header .navbar a:hover {
+    color: #FF6464;
+}
+
+.menu {
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero-about {
+    max-width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-infor {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-infor h2 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: #21243D;
+}
+
+.hero-infor p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #21243D;
+}
+
+.btn {
+    width: 40%;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    background-color: #FF6464;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: #1268D8;
+    cursor: pointer;
+}
+
+.post {
+    width: 100%;
+    height: 396px;
+    background-color: #EDF7FA;
+    margin-top: 40px;
+}
+
+.recent-post {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.title a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #00A8CC;
+}
+
+.title a:hover {
+    color: #F71010;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content-box {
+    width: 418px;
+    height: 295px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.content-box h2 {
+    color: #21243D;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+}
+
+.note {
+    width: 100%;
+    height: 34px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #21243D;
+    display: flex;
+    justify-content: space-between;
+}
+
+.describe {
+    width: 100%;
+    height: 117px;
+    color: #21243D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.feature {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.feature-work {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-content {
+    display: flex;
+}
+
+.feature-content img {
+    width: 90%;
+    height: 80%;
+    border-radius: 2px;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-box h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.sub {
+    display: flex;
+    gap: 20px;
+}
+
+.sub-year {
+    border-radius: 16px;
+    color: #FFFFFF;
+    background-color: #142850;
+    padding: 2px 5px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.sub-word {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #8695A4;
+}
+
+hr {
+    margin-bottom: 40px;
+}
+
+.footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #21243D;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FF6464;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 14px;
+    color: #21243D;
+    line-height: 100%;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .hero-about {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+}
